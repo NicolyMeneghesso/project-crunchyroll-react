@@ -1,0 +1,458 @@
+/* SECTION */
+.home-plans {
+    position: relative;
+    width: 100%;
+    min-height: 42rem;
+    overflow: hidden;
+
+    margin-bottom: calc(var(--gutter, 48) * .0625rem);
+}
+
+.home-plans-container {
+    width: 100%;
+    max-width: 75rem;
+    margin-inline: auto;
+    padding-inline: 2.5rem;
+}
+
+.home-plans-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* TITLE */
+.home-plans-heading {
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+}
+
+.home-plans-title {
+    margin: 0;
+
+    color: #ffffff;
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: -0.025em;
+}
+
+.home-plans-body {
+    margin-bottom: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* BILLING TOGGLE */
+.home-plans-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    padding: 0.75rem;
+    border: 0.0625rem solid #ff5e00;
+    border-radius: 6.25rem;
+
+    background-color: #000;
+}
+
+.home-plans-toggle-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.125rem;
+
+    min-width: 9.1875rem;
+    min-height: 2.625rem;
+
+    border: none;
+    border-radius: 999px;
+    background-color: transparent;
+
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 1rem;
+    text-decoration: none;
+    white-space: nowrap;
+
+    --bs-btn-color: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-color: #000;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-bg: transparent;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-active-bg: #ff5e00;
+
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.home-plans-toggle-option:hover,
+.home-plans-toggle-option:focus,
+.home-plans-toggle-option:focus-visible,
+.home-plans-toggle-option:active {
+    color: #fff !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+.home-plans-toggle-option.active,
+.home-plans-toggle-option.active:hover,
+.home-plans-toggle-option.active:focus,
+.home-plans-toggle-option.active:focus-visible,
+.home-plans-toggle-option.active:active {
+    color: #000 !important;
+    background-color: #ff5e00 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+.home-plans-toggle-option small {
+    color: inherit;
+    font-size: 0.6875rem;
+    font-weight: 800;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+}
+
+/* PLANS GRID */
+.home-plans-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 356px);
+    align-items: stretch;
+
+    width: 100%;
+    padding-top: 2rem;
+}
+
+/* CARD */
+.home-plan-card {
+    width: 336px;
+    height: 546px;
+    min-width: 0;
+
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: none;
+
+    border: 1px solid #ff5e00;
+    border-radius: 1rem;
+
+    background-color: #00000005;
+    color: #f2f2f2;    
+}
+
+/* CARD BODY */
+.home-plan-card .home-plan-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 1.25rem 1.125rem 2rem;
+}
+
+/* CARD HEADER */
+.home-plan-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* BADGE: MAIS POPULAR */
+.home-plan-best-deal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    width: 100%;
+    min-height: 20px;
+    margin: 0 0 1rem;
+    padding: 0;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.home-plan-best-deal span {
+    color: #ff5e00;
+    font-size: 18px;
+}
+
+/* PLAN NAME */
+.home-plan-name {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+}
+
+/* PRICING */
+.home-plan-pricing {
+    margin: 0px;
+
+    color: #fff;
+    font-size: 23px;
+    font-weight: 750;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.home-plan-price {
+    margin: 0px;
+
+    color: #ffffff;
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-plan-monthly-equivalent {
+    margin: 0px;
+
+    color: #8c8c8c;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.home-plan-taxes {
+    margin:0px;
+    padding: 0px;
+
+    color: #8c8c8c;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+/* ACTIONS */
+.home-plan-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.home-plan-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 40px;
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 750;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* PRIMARY BUTTON */
+.home-plan-button--primary,
+.home-plan-button--primary:focus,
+.home-plan-button--primary:active {
+    border: 1px solid #ff5e00;
+    background: #ff5e00;
+    color: #000;
+    box-shadow: none;
+}
+
+.home-plan-button--primary:hover {
+    border-color: #ff7a2f;
+    background: #ff7a2f;
+    color: #000;
+}
+
+/* SECONDARY BUTTON */
+.home-plan-button--secondary,
+.home-plan-button--secondary:focus,
+.home-plan-button--secondary:active {
+    gap: .25rem;
+
+    border: 1px solid transparent;
+    background: transparent;
+    color: #bbbbbb;
+
+    font-size: 1rem;
+    line-height: 1.25rem;
+
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.home-plan-button--secondary:hover {
+    border-color: transparent;
+    background: transparent;
+    color: #bbbbbb;
+}
+
+/* BENEFITS */
+.home-plan-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.home-plan-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: .75rem;
+
+    margin: 0;
+
+    color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.home-plan-check {
+    flex: 0 0 16px;
+
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+
+    fill: #ff5e00;
+}
+
+/* LEGAL TEXT */
+.home-plans-legal {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    width: 100%;
+    max-width: 56rem;
+    margin-top: 0.25rem;
+}
+
+.home-plans-legal small {
+    color: #a7a9b2;
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+/* SELEÇÃO DO TEXTO */
+.home-plans-title::selection, .home-plan-best-deal::selection,
+.home-plan-name::selection, .home-plan-price::selection, 
+.home-plan-monthly-equivalent::selection, .home-plan-taxes::selection, 
+.home-plan-benefits li::selection, .home-plan-button::selection, 
+.home-plans-legal small::selection {
+    color: #f47521;
+    background: transparent;
+}
+
+/* TABLET */
+@media (min-width: 35.5em) and (max-width: 49.9375em) {
+    .home-plans-content {
+        gap: 1.75rem;
+    }
+
+    .home-plans-grid {
+        gap: 1rem;
+    }
+
+    .home-plan-card-body {
+        padding: 1.25rem;
+    }
+
+    .home-plan-name {
+        font-size: 1.5rem;
+    }
+
+    .home-plan-price {
+        font-size: 1.125rem;
+    }
+
+    .home-plan-benefits li {
+        font-size: 0.875rem;
+    }
+
+    .home-plan-button {
+        padding-inline: 0.75rem;
+        font-size: 0.8125rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 35.4375em) {
+    .home-plans-container {
+        padding-inline: 1.25rem;
+    }
+
+    .home-plans-content {
+        gap: 1.5rem;
+    }
+
+    .home-plans-title {
+        font-size: 1.75rem;
+    }
+
+    .home-plans-toggle-option {
+        min-width: 6.5rem;
+        padding-inline: 1rem;
+    }
+
+    .home-plans-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+
+    .home-plan-card-body {
+        padding: 1.5rem;
+    }
+
+    .home-plan-name {
+        font-size: 1.625rem;
+    }
+
+    .home-plan-price {
+        font-size: 1.25rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 50em) {
+    .home-plans-container {
+        padding-inline: 2.5rem;
+    }
+
+    .home-plans-content {
+        gap: 2.5rem;
+    }
+}

@@ -1,0 +1,95 @@
+.header-navbar {
+    background-color: #000000b3;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    padding: 0 !important;
+    min-height: 64px !important;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 4rem;
+}
+
+.logo-desktop {
+    fill: #ff5e00;
+    display: block;
+    width: 8.5rem;
+}
+
+.logo-mobile {
+    fill: #ff5e00;
+    display: none;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.header-actions {
+    gap: .75rem;
+}
+
+.header-actions .btn {
+    height: 40px;
+    padding: 0 2rem;
+    
+    border-radius: 1.5rem !important;
+   
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.button-login {
+    background-color: transparent;
+    border: 2px solid #a0a0a0;
+    color: #bbb;
+
+    transition:
+        color .2s,
+        border-color .2s;
+}
+
+.button-login:hover{
+    background: transparent;
+    color:#ffffff;
+    border-color:#ffffff;
+}
+
+.button-premium{
+    background:#ff5e00;
+    border-color:#ff5e00;
+    color:#000;
+
+    transition: background-color .2s;
+}
+
+.button-premium:hover{
+    background:#ff7b2e;
+    border-color:#ff7b2e;
+    color:#000;
+}
+
+@media (min-width: 35.5em) {
+    .header-container {
+        --padding-inline: 2.5rem;
+    }
+}
+
+@media (max-width: 35.4375em) {
+    .logo-desktop {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: inline;
+    }
+
+    .button-premium {
+        display: none;
+    }
+}

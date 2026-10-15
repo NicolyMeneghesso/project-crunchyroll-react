@@ -1,0 +1,136 @@
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1rem;
+
+    padding-top: 1.5rem;
+    border-top: .0625rem solid #414141;
+
+    color: #999;
+    font-size: .875rem;
+}
+
+.footer-divider {
+    width: .0625rem;
+    height: 1.125rem;
+
+    margin: 0 .75rem;
+
+    background-color: #414141;
+    flex-shrink: 0;
+}
+
+.footer-bottom-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-sony {
+    flex: 0 0 auto;
+    fill: #8c8c8c;
+}
+
+.footer-language-wrapper {
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: auto;
+}
+
+/* Dropdown */
+
+.footer-language {
+    display: flex !important;
+    align-items: center;
+
+    width: auto !important;
+    height: 100%;
+
+    padding: .625rem .75rem !important;
+
+    color: #fff !important;
+    text-decoration: none !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+
+    font-size: .875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+.footer-language::after {
+    display: none !important;
+}
+
+.footer-language:hover,
+.footer-language:focus,
+.footer-language:active {
+    color: #fff !important;
+
+    background: #272727 !important;
+    box-shadow: none !important;
+}
+
+.footer-language-icon {
+    fill: currentColor;
+
+    flex: 0 0 1.5rem;
+
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.footer-language-text {
+    color: #fff;
+    font-weight: 700;
+
+    margin-left: .5rem;
+    text-transform: uppercase;
+    transition: none;
+}
+
+.footer-language-menu {
+    width: 100%;
+    max-height: 28.75rem;
+
+    padding: 0.5rem 0;
+
+    overflow-y: auto;
+
+    background-color: #272727 !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    z-index: 100;
+}
+
+.footer-language-menu .dropdown-item {
+    padding: 0.75rem 1rem;
+
+    font-size: 0.875rem;
+    background-color: transparent;
+
+    color: #8c8c8c;
+}
+
+.footer-language-menu .dropdown-item:hover,
+.footer-language-menu .dropdown-item:focus {
+    color: #fff;
+    background-color: #3a3a3a;
+}
+
+@media (max-width: 35.4375em) {
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-language-wrapper {
+        margin-left: 0;
+    }
+}

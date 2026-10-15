@@ -1,0 +1,27 @@
+.home-page {
+    width: 100%;
+}
+
+.home-main-layout {
+    --top-gutter: 3rem;
+    --bottom-gutter: 3rem;
+    --gutter: 48;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.home-main-layout>section {
+    width: 100%;
+    margin-bottom: calc(var(--gutter) * .0625rem);
+}
+
+@media (min-width: 50em) {
+    .home-main-layout {
+        --top-gutter: 6rem;
+        --bottom-gutter: 6rem;
+        --gutter: 96;
+    }
+}
