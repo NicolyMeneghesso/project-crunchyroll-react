@@ -3,6 +3,8 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 import { plans } from "../data/plans";
+import IconPlans from "../assets/IconPlans";
+import CheckPlans from "../assets/CheckPlans";
 
 import "./HomePlans.css";
 
@@ -48,21 +50,23 @@ function HomePlans() {
                     <div className="home-plan-head">
 
                       <div className="home-plan-best-deal">
-                        {billingPeriod === "annual" && (
-                          <>
-                            <span aria-hidden="true">✦</span>
-                              Pague em parcelas
-                            <span aria-hidden="true">✦</span>
-                          </>
-                        )}
+                        <div className="home-plan-best-deal-content">
+                          {(billingPeriod === "annual" || plan.bestDeal) && (
+                            <>
+                              <span aria-hidden="true">
+                                <IconPlans />
+                              </span>
 
-                        {billingPeriod === "monthly" && plan.bestDeal && (
-                          <>
-                            <span aria-hidden="true">✦</span>
-                              O mais popular
-                            <span aria-hidden="true">✦</span>
-                          </>
-                        )}
+                              <span className={billingPeriod === "annual" ? "" : "home-plan-best-deal-uppercase"}>
+                                {billingPeriod === "annual" ? "Pague em parcelas" : "O mais popular"}
+                              </span>
+
+                              <span aria-hidden="true">
+                                <IconPlans />
+                              </span>
+                            </>
+                          )}
+                        </div>
                       </div>
 
                       <h3 className="home-plan-name">
@@ -117,14 +121,7 @@ function HomePlans() {
                     <ul className="home-plan-benefits">
                       {plan.benefits.map((benefit, index) => (
                         <li key={`${plan.id}-${index}`}>
-                          <svg
-                            className="home-plan-check"
-                            viewBox="0 0 16 16"
-                            aria-hidden="true"
-                          >
-                            <path d="M7 12a1 1 0 0 1-.707-.293l-3-3a.999.999 0 1 1 1.414-1.414l2.226 2.226 4.3-5.16a1 1 0 1 1 1.535 1.28l-5 6.001A1 1 0 0 1 7 12" />
-                          </svg>
-
+                          <CheckPlans />
                           <span>{benefit}</span>
                         </li>
                       ))}
