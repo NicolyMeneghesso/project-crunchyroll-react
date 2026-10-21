@@ -97,12 +97,12 @@ function HomePlans() {
                     </div>
 
                     <div className="home-plan-actions">
-                      <Button
-                        variant="primary"
-                        className="home-plan-button home-plan-button--primary"
-                        onClick={() =>
-                          console.log(`Teste grátis: ${plan.name}`)
-                        }
+                      <Button variant="primary"
+                        className={`home-plan-button home-plan-button--primary ${plan.id === "fan"
+                            ? "home-plan-button--outline"
+                            : "home-plan-button--filled"
+                          }`}
+                        onClick={() => console.log(`Teste grátis: ${plan.name}`)}
                       >
                         Comece um teste grátis de 7 dias
                       </Button>
@@ -134,18 +134,15 @@ function HomePlans() {
 
           <div className="home-plans-legal">
             <small>
-              *Os planos podem incluir trailers e mensagens promocionais
-              sobre conteúdos, serviços ou produtos relacionados à
-              Crunchyroll.
+              *Os planos podem incluir trailers e mensagens promocionais sobre o conteúdo e os serviços do Crunchyroll,
+              ou sobre produtos relacionados.
             </small>
 
             <small>
-              A oferta de teste gratuito é válida para novos assinantes
-              elegíveis. A assinatura renova automaticamente ao fim do
-              período de teste, pelo valor indicado no plano selecionado.
-              Cancele a qualquer momento. Restrições e outras condições
-              se aplicam. Preços, conteúdos e funcionalidades sujeitos
-              a alterações.
+              Oferta de testes gratuita válida para novos assinantes elegíveis.
+              Plano se renova automaticamente ao fim do período de testes, pelo valor indicado no plano selecionado.
+              Cancele a qualquer momento. Restrições e outras condições se aplicam.
+              Preço, conteúdo e funcionalidades sujeitas a alteração.
             </small>
           </div>
         </div>
